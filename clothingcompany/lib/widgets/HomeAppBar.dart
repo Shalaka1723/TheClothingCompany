@@ -1,4 +1,4 @@
-// import 'package:badges/badges.dart' as Badge;
+// import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 
 class HomeAppBar extends StatelessWidget {
@@ -28,7 +28,7 @@ class HomeAppBar extends StatelessWidget {
             ),
             ),
             Spacer(),
-            // Badgess(             
+            // badges.Badge(             
             //   badgeColor: Colors.red,
             //   padding: EdgeInsets.all(7),
             //   badgeContent: Text(

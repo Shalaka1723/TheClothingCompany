@@ -1,5 +1,6 @@
 import 'package:clothingcompany/widgets/CategoriesWidget.dart';
 import 'package:clothingcompany/widgets/HomeAppBar.dart';
+import 'package:clothingcompany/widgets/ItemsWidget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget {
         children: [
           HomeAppBar(),
           Container(
-            height: 500,
+            // height: 500,
             padding: EdgeInsets.only(top: 15),
             decoration: BoxDecoration(
               color: const Color.fromARGB(255, 255, 152, 187),
@@ -68,6 +69,22 @@ class HomePage extends StatelessWidget {
                 ),
                 
                 CategoriesWidget(),
+
+                Container(
+                  alignment: Alignment.centerLeft,
+                  margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                  child: Text(
+                    "Bestselling",
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.red,
+                    ),
+                  ),
+                ),
+
+
+                ItemsWidget(),
               ],
             ),
           ),
