@@ -1,8 +1,7 @@
+// import 'package:badges/badges.dart' as Badge;
 import 'package:flutter/material.dart';
 
 class HomeAppBar extends StatelessWidget {
-
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,7 +19,7 @@ class HomeAppBar extends StatelessWidget {
               left: 20,
             ),
             child: Text(
-              "DP Shop",
+              "The Clothing Company",
               style: TextStyle(
                 fontSize: 23, 
                 fontWeight: FontWeight.bold,
@@ -28,7 +27,25 @@ class HomeAppBar extends StatelessWidget {
               ),
             ),
             ),
-            Spacer()
+            Spacer(),
+            // Badgess(             
+            //   badgeColor: Colors.red,
+            //   padding: EdgeInsets.all(7),
+            //   badgeContent: Text(
+            //     "3",
+            //     style: TextStyle(
+            //       color: Colors.cyan,
+            //     ),
+            //     ),
+            //   child: InkWell(
+            //     onTap: (){},
+            //     child: Icon(
+            //       Icons.shopping_bag_outlined,
+            //       size: 32,
+            //       color: Colors.orange,
+            //     )
+            //   ),
+            // ),
         ],
       ),
     );
