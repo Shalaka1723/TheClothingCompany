@@ -1,4 +1,3 @@
-// import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 
 class HomeAppBar extends StatelessWidget {
@@ -26,26 +25,32 @@ class HomeAppBar extends StatelessWidget {
                 color: Colors.deepOrange,
               ),
             ),
-            ),
-            Spacer(),
-            // badges.Badge(             
-            //   badgeColor: Colors.red,
-            //   padding: EdgeInsets.all(7),
-            //   badgeContent: Text(
-            //     "3",
-            //     style: TextStyle(
-            //       color: Colors.cyan,
-            //     ),
-            //     ),
-            //   child: InkWell(
-            //     onTap: (){},
-            //     child: Icon(
-            //       Icons.shopping_bag_outlined,
-            //       size: 32,
-            //       color: Colors.orange,
-            //     )
-            //   ),
-            // ),
+          ),
+          Spacer(),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/login');
+            },
+            child: const Text('Login'),
+          ),
+          // badges.Badge(             
+          //   badgeColor: Colors.red,
+          //   padding: EdgeInsets.all(7),
+          //   badgeContent: Text(
+          //     "3",
+          //     style: TextStyle(
+          //       color: Colors.cyan,
+          //     ),
+          //   ),
+          //   child: InkWell(
+          //     onTap: (){},
+          //     child: Icon(
+          //       Icons.shopping_bag_outlined,
+          //       size: 32,
+          //       color: Colors.orange,
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );
